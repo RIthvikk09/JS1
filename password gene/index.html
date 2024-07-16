@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <label for="length">Password Length:</label>
+        <input type="number" id="length" min="4" max="20" value="8">
+    </div>
+
+    <div class="container">
+        <label for="uppercase">Include Uppercase Letters:</label>
+        <input type="checkbox" id="uppercase" checked>
+    </div>
+
+    <div class="container">
+        <label for="lowercase">Include Lowercase Letters:</label>
+        <input type="checkbox" id="lowercase" checked>
+    </div>
+
+    <div class="container">
+        <label for="numbers">Include Numbers:</label>
+        <input type="checkbox" id="numbers" checked>
+    </div>
+
+    <div class="container">
+        <label for="symbols">Include Symbols:</label>
+        <input type="checkbox" id="symbols" checked>
+    </div>
+
+    <button id="generate">Generate Password</button>
+
+    <input type="text" id="password" readonly>
+</body>
+<script src="script.js"></script>
+
+</html>
